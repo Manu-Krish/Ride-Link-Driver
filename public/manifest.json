@@ -1,0 +1,41 @@
+{
+  "name": "Ride Link Driver",
+  "short_name": "RideLink",
+  "description": "Professional ride-sharing driver application for managing rides, tracking earnings, and connecting with passengers",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["transportation", "business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Start Ride",
+      "short_name": "Start",
+      "description": "Start a new ride",
+      "url": "/?action=start-ride",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# PWA
+public/sw.js
+public/workbox-*.js
+public/worker-*.js
+public/sw.js.map
+public/workbox-*.js.map
+public/worker-*.js.map
+
+# Testing
+coverage/
+.nyc_output
+
+# Environment
+.env*.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/

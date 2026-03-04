@@ -1,0 +1,84 @@
+/* Hide scrollbar for horizontal scroll containers */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Snap scroll for recommended cards */
+.snap-x {
+    scroll-snap-type: x mandatory;
+}
+
+.snap-center {
+    scroll-snap-align: center;
+}
+
+/* Card hover animation */
+.card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Safe area for bottom navigation */
+.safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Bottom nav FAB pulse */
+@keyframes fab-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 14px rgba(19, 109, 236, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 20px rgba(19, 109, 236, 0.5);
+    }
+}
+
+.fab-button {
+    animation: fab-pulse 2s ease-in-out infinite;
+}
+
+/* Fade-in animation for page load */
+@keyframes home-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-animate-in {
+    animation: home-fade-in 0.4s ease-out;
+}
+
+/* Stagger children animation */
+.stagger-1 {
+    animation-delay: 0.05s;
+}
+
+.stagger-2 {
+    animation-delay: 0.1s;
+}
+
+.stagger-3 {
+    animation-delay: 0.15s;
+}
+
+.stagger-4 {
+    animation-delay: 0.2s;
+}
